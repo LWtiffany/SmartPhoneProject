@@ -1,7 +1,6 @@
 # 项目目录结构
 
-## Backend/ 
-### 项目根目录  
+## Backend/# 项目根目录  
 ├── Tourists_in_HKU/ # 应用目录  
 │   ├── migrations/ # 存放数据库迁移文件  
 │   ├── templates/ # HTML模板文件  
