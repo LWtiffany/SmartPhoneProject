@@ -29,6 +29,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Email Setting
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # 假设的SMTP服务器地址，你需要确认
+EMAIL_PORT = 587  # 587端口一般用于TLS加密
+EMAIL_USE_TLS = True  # 启用TLS加密
+EMAIL_HOST_USER = 'lwtiffany0601@gmail.com'  # 你的邮箱地址
+EMAIL_HOST_PASSWORD = 'iscfdvsddrwyceee'  # 你的邮箱密码，或者使用应用专用密码
+# DEFAULT_FROM_EMAIL = 'lwtiffany0601@gmail.com'  # 默认发件人邮箱
 
 # Application definition
 
