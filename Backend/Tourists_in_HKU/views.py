@@ -13,12 +13,14 @@ def book_tour(request):
 
             # 提取预定邮箱
             email = form.cleaned_data['email']
-            username=form.cleaned_data['name']
+            username = form.cleaned_data['name']
             # 调用封装的发送邮件方法
-            send_success_email(email,username)
+            send_success_email(email, username)
 
             # 返回成功预约的HTTP响应
-            return HttpResponse("Email successfully sent to " + email, status=200)
+            return HttpResponse('Booking completed!', status=200)
+        else:
+            return HttpResponse('Not success', status=503)
     elif request.method == 'GET':
         form = BookingForm()
         return render(request, 'Tourists_in_HKU/book_tour.html', {'form': form})

@@ -9,11 +9,11 @@ from django.conf import settings
 from django.http import HttpResponse
 
 
-def send_success_email(user_id, to_email):
+def send_success_email(email, name):
     try:
         # 获取用户的姓名
-        user = User.objects.get(id=user_id)
-        user_name = user.first_name  # 获取用户的名字
+        to_email = email
+        user_name = name  # 获取用户的名字
 
         # 邮件内容包含用户的姓名
         subject = 'Booking Successful'
