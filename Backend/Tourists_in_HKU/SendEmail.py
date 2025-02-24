@@ -1,9 +1,6 @@
 # SendEmail.py
 from django.core.mail import send_mail
 from django.conf import settings
-
-# views.py
-
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.http import HttpResponse
@@ -60,11 +57,11 @@ def send_success_email(email, name):
         """
         email = EmailMessage(
             subject,  # Email subject
-            html_content,  # HTML formatted email content
+            html_content,  #email content
             settings.DEFAULT_FROM_EMAIL,  # Sender's email address
             [to_email],  # Recipient's email address
         )
-        email.content_subtype = 'html'  # Specify that the content is HTML
+        email.content_subtype = 'html'
         email.send()
         return HttpResponse("Email successfully sent to " + to_email)
     except Exception as e:

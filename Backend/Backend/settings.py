@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Email Setting
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # 假设的SMTP服务器地址，你需要确认
+EMAIL_HOST = 'smtp.gmail.com'  # 假设的SMTP服务器地址
 EMAIL_PORT = 587  # 587端口一般用于TLS加密
 EMAIL_USE_TLS = True  # 启用TLS加密
 EMAIL_HOST_USER = 'hkutopia2025@gmail.com'  # 你的邮箱地址
