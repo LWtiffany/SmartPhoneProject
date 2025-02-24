@@ -29,6 +29,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Email Setting
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # 假设的SMTP服务器地址
+EMAIL_PORT = 587  # 587端口一般用于TLS加密
+EMAIL_USE_TLS = True  # 启用TLS加密
+EMAIL_HOST_USER = 'hkutopia2025@gmail.com'  # 你的邮箱地址
+EMAIL_HOST_PASSWORD = 'fpogeysceouuqyxa'  # 你的邮箱密码，或者使用应用专用密码
+DEFAULT_FROM_EMAIL = 'hkutopia2025@gmail.com'  # 默认发件人邮箱
 
 # Application definition
 
@@ -46,12 +55,11 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
+#"django.middleware.csrf.CsrfViewMiddleware",
 ROOT_URLCONF = "Backend.urls"
 
 TEMPLATES = [
