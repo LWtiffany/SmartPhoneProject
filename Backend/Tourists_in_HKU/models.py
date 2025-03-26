@@ -1,8 +1,5 @@
 from django.db import models
 
-from django.db import models
-
-
 class Booking(models.Model):
     name = models.CharField(max_length=100)  # 用户姓名
     email = models.EmailField()  # 用户邮箱
@@ -13,7 +10,14 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.date} {self.time}"
+class GeoFence(models.Model):
+    name = models.CharField(max_length=100)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    radius = models.FloatField()  # 单位：米
 
+    def __str__(self):
+        return f"{self.name} - ({self.latitude}, {self.longitude})"
 
 class Video(models.Model):
     title = models.CharField(max_length=100)

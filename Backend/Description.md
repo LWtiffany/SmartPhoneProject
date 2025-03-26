@@ -12,7 +12,8 @@
 │   ├── apps.py # 应用配置类  
 │   ├── forms.py # 表单定义（预约表单）  
 │   ├── models.py # 数据模型（Booking和Video）  
-│   ├── tests.py # 单元测试文件  
+│   ├── tests.py # 单元测试文件    
+│   ├── SendEmail.py #预约成功发送邮件功能   
 │   ├── urls.py # 应用级URL路由配置  
 │   └── views.py # 视图函数（业务逻辑）  
 
@@ -25,3 +26,16 @@
 
 ├── manage.py # Django命令行工具入口  
 └── requirements.txt # 项目依赖列表  
+
+## Description of Database
+Table <auth~> deny illegal login in system
+
+Table <Django~> Django system intial files
+
+## How to Access
+
+本地访问：http://localhost:8000/tourists/book/
+
+局域网访问：http://<你的IP>:8000/tourists/book/
+
+

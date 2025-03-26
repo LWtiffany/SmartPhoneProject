@@ -1,16 +1,17 @@
-# SendEmail.py
-from django.core.mail import send_mail
-from django.conf import settings
+from celery import shared_task
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.http import HttpResponse
+import logging
 
+logger = logging.getLogger(__name__)
 
+@shared_task
 def send_success_email(email, name):
     try:
         # 获取用户的姓名
         to_email = email
-        user_name = name  # 获取用户的名字
+        user_name = name
 
         # 邮件内容包含用户的姓名
         subject = 'Booking Successful'
@@ -47,7 +48,7 @@ def send_success_email(email, name):
             </head>
             <body>
                 <h1>Your booking has been successfully completed!</h1>
-                <p>Dear {user_name},</p>  <!-- Personalized greeting -->
+                <p>Dear {user_name},</p>  
                 <p>We are pleased to inform you that your booking has been successfully completed!</p>
                 <p>Click the button below to view the details:</p>
                 <a href="https://www.example.com/booking-details" class="button">View Booking Details</a>
@@ -56,13 +57,16 @@ def send_success_email(email, name):
         </html>
         """
         email = EmailMessage(
-            subject,  # Email subject
-            html_content,  #email content
-            settings.DEFAULT_FROM_EMAIL,  # Sender's email address
-            [to_email],  # Recipient's email address
+            subject,
+            html_content,
+            settings.DEFAULT_FROM_EMAIL,
+            [to_email],
         )
         email.content_subtype = 'html'
         email.send()
-        return HttpResponse("Email successfully sent to " + to_email)
+        logger.info(f"邮件已成功发送给 {user_name} ({to_email})")
+        return f"Email successfully sent to {to_email}"
     except Exception as e:
-        return HttpResponse(f"Failed to send email: {e}")
+        logger.error(f"发送邮件失败：{str(e)}")
+        return f"Failed to send email: {e}"
+
