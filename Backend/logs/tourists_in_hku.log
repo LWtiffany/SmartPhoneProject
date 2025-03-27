@@ -322,3 +322,42 @@ NameError: name 'BookingForm' is not defined
 2025-03-27 14:19:52,160 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
 2025-03-27 14:19:52,160 [INFO] __init__ - VerificationService: 成功加载验证码服务
 2025-03-27 14:19:52,347 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 14:39:32,387 [INFO] verification_service - 验证码已发送至邮箱：tiffanyluo2868@163.com
+2025-03-27 14:39:32,389 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 14:39:35,411 [INFO] verify - 验证码邮件已成功发送给 tiffanyluo2868@163.com
+2025-03-27 14:39:48,117 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 14:39:48,118 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 14:39:51,188 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 15:32:52,258 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verify.py changed, reloading.
+2025-03-27 15:32:58,828 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 15:32:58,829 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 15:32:59,247 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 15:44:25,445 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 15:44:25,447 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 15:44:27,270 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 15:44:27,272 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 15:44:28,601 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 15:44:30,330 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 15:44:30,332 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 15:44:32,127 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 15:44:32,129 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 15:44:32,344 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 15:44:35,794 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 15:44:39,438 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 15:44:46,374 [INFO] verification_service - 验证码已发送至邮箱：u3638153@connect.hku.hk
+2025-03-27 15:44:46,375 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 58
+2025-03-27 15:44:49,113 [INFO] verify - 验证码邮件已成功发送给 u3638153@connect.hku.hk
+2025-03-27 15:48:54,178 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verification_service.py changed, reloading.
+2025-03-27 15:48:57,428 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 15:48:57,429 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 15:48:57,705 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 15:49:21,480 [INFO] verification_service - 邮箱 2577933967@qq.com 的验证码已存在，未重新生成
+2025-03-27 15:49:21,482 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 66
+2025-03-27 15:49:24,885 [INFO] verification_service - 邮箱 2577933967@qq.com 的验证码已存在，未重新生成
+2025-03-27 15:49:24,886 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 66
+2025-03-27 15:49:26,694 [INFO] verification_service - 邮箱 2577933967@qq.com 的验证码已存在，未重新生成
+2025-03-27 15:49:26,696 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 66
+2025-03-27 15:50:14,299 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verification_service.py changed, reloading.
+2025-03-27 15:50:18,625 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 15:50:18,626 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 15:50:18,905 [INFO] autoreload - Watching for file changes with StatReloader
