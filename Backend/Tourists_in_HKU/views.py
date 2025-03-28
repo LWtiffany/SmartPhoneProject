@@ -36,9 +36,14 @@ from .VerificationService.verification_service import send_verification_code_ser
 from django.http import JsonResponse, HttpResponseNotAllowed
 from .VerificationService.verification_service import send_verification_code_service
 
+from django.http import JsonResponse
+import json
+from .VerificationService.VerifyEmailCode import verify_verification_code_service
+
+
 def send_verification_code(request):
     """
-    发送验证码，仅接受 POST 方法
+    发送验证码
     """
     if request.method == 'POST':
         email = request.POST.get('email')
@@ -48,18 +53,21 @@ def send_verification_code(request):
         result = send_verification_code_service(email)
         return JsonResponse(result)
     else:
-        return HttpResponseNotAllowed(['POST'])
-
+        return HttpResponseNotAllowed(['GET'])
 
 
 def verify_code(request):
     """
-    校验验证码
+    验证验证码接口
     """
-    email = request.GET.get('email')
-    code = request.GET.get('code')
-    result = verify_code_service(email, code)
-    return JsonResponse(result)
-
-
-
+    if request.method == 'POST':
+        try:
+            email = request.POST.get('email')
+            code = request.POST.get('code')
+            if not email or not code:
+                return JsonResponse({"status": "error", "message": "Email and code are required"}, status=400)
+            result = verify_verification_code_service(email, code)
+            return JsonResponse(result)
+        except Exception as e:
+            return JsonResponse({"status": "error", "message": str(e)}, status=500)
+    return JsonResponse({"status": "error", "message": "Invalid method"}, status=405)

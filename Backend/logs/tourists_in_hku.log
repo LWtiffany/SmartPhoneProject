@@ -361,3 +361,76 @@ NameError: name 'BookingForm' is not defined
 2025-03-27 15:50:18,625 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
 2025-03-27 15:50:18,626 [INFO] __init__ - VerificationService: 成功加载验证码服务
 2025-03-27 15:50:18,905 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 20:48:44,945 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-27 20:48:53,439 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 20:48:53,439 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 20:48:53,891 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:34:26,215 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-27 21:34:29,843 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:34:29,843 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:34:30,178 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:35:46,818 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-27 21:35:49,428 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:35:49,429 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:35:49,623 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:38:23,121 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-27 21:38:26,102 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:38:26,103 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:38:26,333 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:40:59,880 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-27 21:41:02,543 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:41:02,544 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:41:02,735 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:46:21,460 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-27 21:46:21,464 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-03-27 21:46:25,089 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-27 21:46:49,973 [ERROR] log - Internal Server Error: /tourists/verify_code/
+2025-03-27 21:46:49,974 [ERROR] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 500 75
+2025-03-27 21:47:26,919 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-27 21:47:29,472 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:47:29,472 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:47:29,690 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:48:21,524 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-27 21:48:24,844 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:48:24,845 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:48:25,127 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:49:15,566 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-27 21:49:18,208 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:49:18,209 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:49:18,408 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:50:16,404 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-27 21:50:18,940 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:50:18,940 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:50:19,130 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:50:48,876 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-27 21:50:51,253 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-27 21:50:51,253 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-27 21:50:51,450 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-27 21:51:04,782 [ERROR] log - Internal Server Error: /tourists/verify_code/
+2025-03-27 21:51:04,783 [ERROR] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 500 75
+2025-03-27 21:51:10,011 [ERROR] log - Internal Server Error: /tourists/verify_code/
+2025-03-27 21:51:10,013 [ERROR] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 500 75
+2025-03-28 10:57:19,004 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-03-28 10:57:30,300 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-28 10:57:30,301 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-28 10:57:31,305 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-28 10:57:50,378 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-03-28 10:57:50,382 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-03-28 10:57:53,959 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-03-28 10:58:44,783 [ERROR] log - Internal Server Error: /tourists/verify_code/
+2025-03-28 10:58:44,786 [ERROR] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 500 75
+2025-03-28 11:00:49,020 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-28 11:00:54,734 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-28 11:00:54,735 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-28 11:00:55,077 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-28 11:01:06,666 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-28 11:01:20,617 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-28 11:01:20,619 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-28 11:01:21,213 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-28 11:02:02,176 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：307770 对应邮箱：2577933967@qq.com
+2025-03-28 11:02:02,178 [INFO] VerifyEmailCode - 验证码验证成功：2577933967@qq.com
+2025-03-28 11:02:02,185 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-03-28 11:06:25,256 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-03-28 11:06:29,566 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-28 11:06:29,566 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-28 11:06:29,852 [INFO] autoreload - Watching for file changes with StatReloader
