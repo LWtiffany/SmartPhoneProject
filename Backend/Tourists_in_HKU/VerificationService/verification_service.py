@@ -1,14 +1,12 @@
 import logging
 from Tourists_in_HKU.cache_utils import generate_code, store_verification_code, get_verification_code
 from Tourists_in_HKU.VerificationService.verify import send_verification_email
+
 # from django.core.validators import validate_email
 # from django.core.exceptions import ValidationError
 # from django.http import JsonResponse, HttpResponseNotAllowed
 
 logger = logging.getLogger(__name__)
-
-
-
 
 
 def send_verification_code_service(email):
@@ -35,8 +33,6 @@ def send_verification_code_service(email):
     except Exception as e:
         logger.error(f"验证码发送失败：{str(e)}")
         return {"status": 503, "message": "Failed to send verification code"}
-
-
 
 
 def verify_code_service(email, code):

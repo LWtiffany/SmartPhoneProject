@@ -434,3 +434,506 @@ NameError: name 'BookingForm' is not defined
 2025-03-28 11:06:29,566 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
 2025-03-28 11:06:29,566 [INFO] __init__ - VerificationService: 成功加载验证码服务
 2025-03-28 11:06:29,852 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-28 11:49:14,995 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verification_service.py changed, reloading.
+2025-03-28 11:49:20,418 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-03-28 11:49:20,419 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-03-28 11:49:20,728 [INFO] autoreload - Watching for file changes with StatReloader
+2025-03-28 11:50:39,091 [INFO] VerifyEmailCode - Redis 中未找到验证码，邮箱：2577933967@qq.com
+2025-03-28 11:50:39,092 [WARNING] VerifyEmailCode - 验证码不存在或已过期：2577933967@qq.com
+2025-03-28 11:50:39,096 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 72
+2025-04-05 23:37:35,953 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:37:35,955 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:37:38,281 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:37:38,281 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:37:38,453 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:39:41,705 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-05 23:39:44,109 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:39:44,110 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:39:44,274 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:40:44,398 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\models.py changed, reloading.
+2025-04-05 23:40:47,001 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:40:47,001 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:40:47,259 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:42:40,746 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 19, in book_tour_service
+    if Booking.objects.filter(email=email).exists():
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+2025-04-05 23:42:40,778 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 196049
+2025-04-05 23:45:06,627 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:45:06,627 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:46:08,861 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:46:08,861 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:46:36,800 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:46:36,801 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:46:59,736 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:46:59,737 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:47:08,614 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:47:08,614 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:47:10,903 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:47:10,903 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:47:11,085 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:47:27,506 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 19, in book_tour_service
+    if Booking.objects.filter(email=email).exists():
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+2025-04-05 23:47:27,523 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 196049
+2025-04-05 23:48:31,121 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 19, in book_tour_service
+    if Booking.objects.filter(email=email).exists():
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+2025-04-05 23:48:31,137 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 196049
+2025-04-05 23:49:05,006 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:49:05,006 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:49:07,158 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:49:07,159 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:49:07,329 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:49:13,571 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 19, in book_tour_service
+    if Booking.objects.filter(email=email).exists():
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'tourists_in_hku.tourists_in_hku_booking' doesn't exist")
+2025-04-05 23:49:13,587 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 196049
+2025-04-05 23:50:21,975 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:50:21,976 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:50:35,311 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:50:35,311 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:57:08,729 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:57:08,731 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:57:22,615 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:57:22,616 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:57:25,128 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-05 23:57:25,128 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-05 23:57:25,321 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-05 23:57:42,497 [ERROR] AcceptBooking - 预约失败：(1364, "Field 'id' doesn't have a default value")
+2025-04-05 23:57:42,500 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-05 23:57:42,501 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 00:01:39,832 [ERROR] AcceptBooking - 预约失败：send_success_email() takes 2 positional arguments but 3 were given
+2025-04-06 00:01:39,833 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-06 00:01:39,834 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 00:04:55,358 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-06 00:04:57,644 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:04:57,645 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:04:57,806 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:05:06,172 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-06 00:05:06,174 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:05:06,175 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 00:05:31,329 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-06 00:05:31,330 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:05:31,331 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 00:07:11,526 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 00:07:14,111 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:07:14,112 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:07:14,291 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:07:28,059 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-06 00:08:56,438 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-06 00:08:58,937 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:08:58,938 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:08:59,113 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:09:31,390 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 00:09:33,807 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:09:33,808 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:09:33,976 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:10:06,186 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-06 00:11:38,755 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 00:11:41,513 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:11:41,513 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:11:41,682 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:11:57,424 [INFO] AcceptBooking - 重复预约尝试：tiffanyluo2868@163.com
+2025-04-06 00:11:57,425 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:11:57,426 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 00:15:43,339 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 00:15:45,896 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:15:45,897 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:15:46,066 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:16:10,049 [WARNING] AcceptBooking - 表单验证失败
+2025-04-06 00:16:10,050 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:16:10,050 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 28
+2025-04-06 00:17:10,326 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 00:17:13,066 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:17:13,067 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:17:13,244 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:17:25,469 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-06 00:17:25,470 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:17:25,471 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 00:19:22,802 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:22,803 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:25,805 [ERROR] AcceptBooking - 预约失败：Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-04-06 00:19:25,807 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-06 00:19:25,817 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 00:19:27,935 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:27,938 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:28,250 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:28,251 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:28,756 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:28,758 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:28,849 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:28,851 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:29,204 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:29,205 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:29,421 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:29,421 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:29,719 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:29,720 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:19:29,859 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:19:29,860 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:28,071 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:28,071 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:32,546 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:32,547 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:32,678 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:32,680 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:32,851 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:32,853 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:33,094 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:33,094 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:33,230 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:33,231 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:33,280 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:33,283 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:33,670 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:33,670 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:33,901 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:25:33,903 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:25:50,763 [INFO] AcceptBooking - 重复预约尝试：257793396@qq.com
+2025-04-06 00:25:50,763 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 00:25:50,764 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 00:26:00,052 [INFO] AcceptBooking - 预约成功：257793376@qq.com，2021-10-02，时段A
+2025-04-06 00:26:00,053 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-06 00:26:50,889 [INFO] AcceptBooking - 预约成功：2577933967@qq.com，2021-10-02，时段A
+2025-04-06 00:26:50,891 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-06 00:30:32,020 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-06 00:30:34,766 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 00:30:34,767 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 00:30:34,945 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 00:30:40,748 [ERROR] AcceptBooking - 预约失败：'function' object has no attribute 'delay'
+2025-04-06 00:30:40,750 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-06 00:30:40,754 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 10:38:30,320 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 10:38:33,240 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 10:38:33,240 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 10:38:33,437 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 10:39:31,281 [ERROR] AcceptBooking - 预约失败：name 'logger' is not defined
+2025-04-06 10:39:31,282 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-06 10:39:31,283 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 10:39:57,234 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 10:39:59,551 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 10:39:59,551 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 10:39:59,723 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 10:40:08,404 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 21, in book_tour_service
+    logger.info(f'重复预约尝试：{email}')
+NameError: name 'logger' is not defined
+2025-04-06 10:40:08,410 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 72696
+2025-04-06 10:41:21,986 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-06 10:41:24,909 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 10:41:24,909 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 10:41:25,125 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 10:41:32,667 [INFO] AcceptBooking - 重复预约尝试：257793367@qq.com
+2025-04-06 10:41:32,669 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 10:41:32,670 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 10:41:49,646 [ERROR] AcceptBooking - 预约失败：name 'logger' is not defined
+2025-04-06 10:41:49,648 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-06 10:41:49,649 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-06 10:43:28,688 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-06 10:43:31,023 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 10:43:31,023 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 10:43:31,192 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 10:43:38,916 [INFO] AcceptBooking - 重复预约尝试：25779336@qq.com
+2025-04-06 10:43:38,917 [WARNING] log - Bad Request: /tourists/book/
+2025-04-06 10:43:38,918 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-06 10:43:55,125 [INFO] SendEmail - 邮件已成功发送给 Dear Visitor (2577936@qq.com)
+2025-04-06 10:43:55,127 [INFO] AcceptBooking - 预约成功：2577936@qq.com，2021-10-02，时段A
+2025-04-06 10:43:55,130 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-06 10:45:14,678 [INFO] SendEmail - 邮件已成功发送给 Dear Visitor (tiffanyluo2868@163.com)
+2025-04-06 10:45:14,679 [INFO] AcceptBooking - 预约成功：tiffanyluo2868@163.com，2021-10-02，时段A
+2025-04-06 10:45:14,680 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-06 10:45:59,236 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-06 10:46:01,489 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 10:46:01,490 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 10:46:01,659 [INFO] autoreload - Watching for file changes with StatReloader

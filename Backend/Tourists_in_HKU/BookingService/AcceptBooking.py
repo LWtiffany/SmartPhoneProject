@@ -1,45 +1,51 @@
-import logging
-from django.http import HttpResponse
+from django.http import JsonResponse
 from django.shortcuts import render
 from Tourists_in_HKU.Form import BookingForm
+from Tourists_in_HKU.models import Booking
 from .SendEmail import send_success_email
+import logging
 
-# 获取日志记录器
 logger = logging.getLogger('Tourists_in_HKU')
 
 
 def book_tour_service(request):
-    """
-    Booking Function Implementation
-    """
     if request.method == 'POST':
         form = BookingForm(request.POST)
 
-        # 判断输入是否合法
         if form.is_valid():
-            try:
-                # 保存表单数据到数据库
-                booking = form.save()
-                # 提取邮箱和用户名
-                email = form.cleaned_data['email']
-                username = form.cleaned_data['name']
-                # 异步发送邮件，避免阻塞
-                send_success_email.delay(email, username)
-                logger.info(f'预约成功：{username} ({email})')
+            email = form.cleaned_data['email']
+            date = form.cleaned_data['date']
+            time_slot = form.cleaned_data['time_slot']
 
-                return HttpResponse('Booking completed!', status=200)
+            if Booking.objects.filter(email=email).exists():
+                logger.info(f'重复预约尝试：{email}')
+                return JsonResponse({'message': 'This email has already booked a tour.'}, status=400)
+
+            try:
+                booking = Booking.objects.create(
+                    email=email,
+                    date=date,
+                    time_slot=time_slot
+                )
+
+                send_success_email(email)
+
+                logger.info(f'预约成功：{email}，{date}，时段{time_slot}')
+                return JsonResponse({'message': 'Booking successful!'}, status=200)
+
             except Exception as e:
                 logger.error(f'预约失败：{str(e)}')
-                return HttpResponse('Server Error', status=500)
+                return JsonResponse({'message': 'Server Error'}, status=500)
+
         else:
             logger.warning('表单验证失败')
-            return HttpResponse('Invalid input', status=400)
+            return JsonResponse({'message': 'Invalid input'}, status=400)
 
     elif request.method == 'GET':
-        # GET 方法仅在开发环境测试
         form = BookingForm()
         return render(request, 'Tourists_in_HKU/book_tour.html', {'form': form})
 
     else:
         logger.warning('请求方法不允许')
-        return HttpResponse("Wrong method", status=405)
+        return JsonResponse({'message': 'Wrong method'}, status=405)
+

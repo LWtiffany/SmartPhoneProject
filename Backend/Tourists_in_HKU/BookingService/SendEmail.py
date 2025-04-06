@@ -4,14 +4,14 @@ from django.conf import settings
 from django.http import HttpResponse
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('Tourists_in_HKU')
 
-@shared_task
-def send_success_email(email, name):
+# @shared_task
+def send_success_email(email):
     try:
         # 获取用户的姓名
         to_email = email
-        user_name = name
+        user_name = "Visitor"
 
         # 邮件内容包含用户的姓名
         subject = 'Booking Successful'
