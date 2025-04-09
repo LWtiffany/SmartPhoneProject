@@ -937,3 +937,315 @@ NameError: name 'logger' is not defined
 2025-04-06 10:46:01,489 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
 2025-04-06 10:46:01,490 [INFO] __init__ - VerificationService: 成功加载验证码服务
 2025-04-06 10:46:01,659 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 10:54:33,064 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-04-06 10:54:33,066 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 10:56:27,785 [INFO] verification_service - 验证码已发送至邮箱：tiffanyluo2868@163.com
+2025-04-06 10:56:27,788 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:00:28,956 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verification_service.py changed, reloading.
+2025-04-06 11:00:31,933 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 11:00:31,936 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 11:00:32,148 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 11:00:44,349 [INFO] verification_service - 邮箱 tiffanyluo2868@163.com 的验证码已存在，未重新生成
+2025-04-06 11:00:44,350 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 60
+2025-04-06 11:01:10,824 [INFO] verification_service - 邮箱 2577933967@qq.com 的验证码已存在，未重新生成
+2025-04-06 11:01:10,825 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 60
+2025-04-06 11:01:52,320 [ERROR] verify - 发送验证码邮件失败：[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2025-04-06 11:01:52,321 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-04-06 11:01:52,321 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:04:04,266 [ERROR] verify - 发送验证码邮件失败：[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2025-04-06 11:04:04,267 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-04-06 11:04:04,268 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:12:54,605 [INFO] SendEmail - 邮件已成功发送给 Visitor (2577933967@qq.com)
+2025-04-06 11:12:54,606 [INFO] AcceptBooking - 预约成功：2577933967@qq.com，2021-10-02，时段A
+2025-04-06 11:12:54,607 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-06 11:14:50,902 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verify.py changed, reloading.
+2025-04-06 11:14:53,466 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 11:14:53,467 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 11:14:53,666 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 11:15:41,779 [ERROR] verify - 发送验证码邮件失败：[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2025-04-06 11:15:41,779 [INFO] verification_service - 验证码已发送至邮箱：257793396@qq.com
+2025-04-06 11:15:41,781 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:17:04,061 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verify.py changed, reloading.
+2025-04-06 11:17:07,066 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 11:17:07,067 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 11:17:07,227 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 11:17:10,783 [INFO] verification_service - 邮箱 257793396@qq.com 的验证码已存在，未重新生成
+2025-04-06 11:17:10,784 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 60
+2025-04-06 11:17:28,125 [INFO] verify - 验证码邮件已成功发送给 25779396@qq.com
+2025-04-06 11:17:28,126 [INFO] verification_service - 验证码已发送至邮箱：25779396@qq.com
+2025-04-06 11:17:28,127 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:18:29,017 [ERROR] verify - 发送验证码邮件失败：[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2025-04-06 11:18:29,018 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-04-06 11:18:29,020 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:19:37,644 [INFO] verify - 验证码邮件已成功发送给 tiffanyluo2868@163.com
+2025-04-06 11:19:37,645 [INFO] verification_service - 验证码已发送至邮箱：tiffanyluo2868@163.com
+2025-04-06 11:19:37,646 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:20:20,953 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：232049 对应邮箱：tiffanyluo2868@163.com
+2025-04-06 11:20:20,953 [INFO] VerifyEmailCode - 验证码验证成功：tiffanyluo2868@163.com
+2025-04-06 11:20:20,954 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-06 11:23:40,621 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verification_service.py changed, reloading.
+2025-04-06 11:23:42,885 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-06 11:23:42,886 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-06 11:23:43,051 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-06 11:23:53,360 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：232049 对应邮箱：tiffanyluo2868@163.com
+2025-04-06 11:23:53,360 [INFO] VerifyEmailCode - 验证码验证成功：tiffanyluo2868@163.com
+2025-04-06 11:23:53,364 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-06 11:24:31,664 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：232049 对应邮箱：tiffanyluo2868@163.com
+2025-04-06 11:24:31,665 [INFO] VerifyEmailCode - 验证码验证成功：tiffanyluo2868@163.com
+2025-04-06 11:24:31,666 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-06 11:28:40,373 [ERROR] verify - 发送验证码邮件失败：[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2025-04-06 11:28:40,373 [INFO] verification_service - 验证码已发送至邮箱：tiffanyluo2868@163.com
+2025-04-06 11:28:40,376 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-06 11:29:44,299 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：398127 对应邮箱：tiffanyluo2868@163.com
+2025-04-06 11:29:44,300 [INFO] VerifyEmailCode - 验证码验证成功：tiffanyluo2868@163.com
+2025-04-06 11:29:44,301 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-06 11:29:57,191 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：398127 对应邮箱：tiffanyluo2868@163.com
+2025-04-06 11:29:57,192 [INFO] VerifyEmailCode - 验证码验证成功：tiffanyluo2868@163.com
+2025-04-06 11:29:57,193 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-08 13:02:44,932 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:44,933 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:49,948 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:49,949 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:50,260 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:50,262 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:50,475 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:50,477 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:50,507 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:50,508 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:50,543 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:50,544 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:50,950 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:50,952 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:51,264 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:51,264 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:02:51,490 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:02:51,491 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:03:28,325 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:03:28,326 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:03:30,655 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:03:30,656 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:03:30,837 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:05:48,191 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 13:05:51,894 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:05:51,894 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:05:52,102 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:16:08,422 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:16:08,422 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:16:10,992 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:16:10,992 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:16:11,173 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:25:55,219 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:25:55,223 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:08,014 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:08,015 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:08,249 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:08,252 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:08,345 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:08,352 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:08,808 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:08,812 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:09,231 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:09,236 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:09,628 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:09,629 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:10,199 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:10,208 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:10,657 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:10,659 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:11,012 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:11,013 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:13,261 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:26:13,261 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:26:13,463 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:28:30,432 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 18, in book_tour_service
+    name = form.cleaned_data['name']
+KeyError: 'name'
+2025-04-08 13:28:30,438 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 72152
+2025-04-08 13:32:04,395 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 13:32:07,001 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:32:07,001 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:32:07,169 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:33:21,284 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 18, in book_tour_service
+    name = form.cleaned_data['name']
+KeyError: 'name'
+2025-04-08 13:33:21,289 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 72152
+2025-04-08 13:33:28,966 [ERROR] log - Internal Server Error: /tourists/book/
+Traceback (most recent call last):
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\25779\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py", line 20, in book_tour
+    return book_tour_service(request)
+  File "G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py", line 18, in book_tour_service
+    name = form.cleaned_data['name']
+KeyError: 'name'
+2025-04-08 13:33:28,969 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 72152
+2025-04-08 13:34:16,183 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 13:34:19,720 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:34:19,720 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:34:19,922 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:36:32,190 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\Form.py changed, reloading.
+2025-04-08 13:36:35,021 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:36:35,022 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:36:35,184 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:37:12,061 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 13:37:14,716 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:37:14,716 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:37:14,884 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:37:16,561 [ERROR] AcceptBooking - 预约失败：send_success_email() takes 1 positional argument but 2 were given
+2025-04-08 13:37:16,561 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-08 13:37:16,562 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-08 13:38:00,602 [INFO] AcceptBooking - 重复预约尝试：tiffanyluo2868@163.com
+2025-04-08 13:38:00,602 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 13:38:00,603 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 13:38:16,786 [ERROR] AcceptBooking - 预约失败：send_success_email() takes 1 positional argument but 2 were given
+2025-04-08 13:38:16,787 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-08 13:38:16,788 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-08 13:39:01,479 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\SendEmail.py changed, reloading.
+2025-04-08 13:39:04,036 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 13:39:04,037 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 13:39:04,227 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 13:41:06,288 [WARNING] AcceptBooking - 表单验证失败
+2025-04-08 13:41:06,290 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 13:41:06,291 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 28
+2025-04-08 13:41:22,044 [INFO] SendEmail - 邮件已成功发送给 luowei (2577933967@qq.com)
+2025-04-08 13:41:22,046 [INFO] AcceptBooking - 预约成功：luowei (2577933967@qq.com)，2021-10-02，时段A
+2025-04-08 13:41:22,047 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 18:58:41,958 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 18:58:41,959 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 18:58:44,290 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 18:58:44,291 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 18:58:44,472 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:04:02,329 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:02,330 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:04,593 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:04,594 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:04,757 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:04:31,684 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:31,685 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:37,690 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:37,695 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:38,021 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:38,025 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:38,642 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:38,652 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:39,098 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:39,103 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:39,690 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:39,691 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:39,990 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:39,991 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:40,467 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:40,469 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:04:40,893 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:04:40,894 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:06:18,422 [INFO] SendEmail - 邮件已成功发送给 Sylvester (sylvester.peng@icloud.com)
+2025-04-08 19:06:18,429 [INFO] AcceptBooking - 预约成功：Sylvester (sylvester.peng@icloud.com)，2025-04-16，时段B
+2025-04-08 19:06:18,437 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:07:04,337 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-08 19:07:04,338 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:07:04,339 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:07:25,609 [INFO] SendEmail - 邮件已成功发送给 luowei (257793396@qq.com)
+2025-04-08 19:07:25,611 [INFO] AcceptBooking - 预约成功：luowei (257793396@qq.com)，2021-10-02，时段A
+2025-04-08 19:07:25,614 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:08:11,789 [INFO] AcceptBooking - 重复预约尝试：sylvester.peng@icloud.com
+2025-04-08 19:08:11,790 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:08:11,792 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:08:42,050 [INFO] AcceptBooking - 重复预约尝试：sylvester.peng@icloud.com
+2025-04-08 19:08:42,051 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:08:42,052 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:09:02,336 [INFO] AcceptBooking - 重复预约尝试：2577933967@qq.com
+2025-04-08 19:09:02,336 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:09:02,337 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:12:27,339 [INFO] SendEmail - 邮件已成功发送给 luowei (25779367@qq.com)
+2025-04-08 19:12:27,340 [INFO] AcceptBooking - 预约成功：luowei (25779367@qq.com)，2021-10-02，时段A
+2025-04-08 19:12:27,341 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:14:13,822 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\models.py changed, reloading.
+2025-04-08 19:14:18,141 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:14:18,142 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:14:18,356 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:14:43,153 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 19:14:46,032 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:14:46,032 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:14:46,212 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:15:20,881 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:15:20,881 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:15:39,380 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:15:39,381 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:18:46,257 [INFO] SendEmail - 邮件已成功发送给 Borjigin Mergen (borjigin.mergen@icloud.com)
+2025-04-08 19:18:46,259 [INFO] AcceptBooking - 预约成功：Borjigin Mergen (borjigin.mergen@icloud.com)，2025-04-10，时段A
+2025-04-08 19:18:46,261 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:19:00,000 [INFO] AcceptBooking - 重复预约尝试：borjigin.mergen@icloud.com
+2025-04-08 19:19:00,000 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:19:00,001 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:19:27,077 [INFO] AcceptBooking - 重复预约尝试：borjigin.mergen@icloud.com
+2025-04-08 19:19:27,078 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:19:27,079 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:21:46,177 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-08 19:21:48,803 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:21:48,804 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:21:48,978 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:22:49,554 [ERROR] AcceptBooking - 预约失败：Booking() got unexpected keyword arguments: 'name'
+2025-04-08 19:22:49,555 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-08 19:22:49,556 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-08 19:24:04,323 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\models.py changed, reloading.
+2025-04-08 19:24:06,901 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 19:24:06,902 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 19:24:07,079 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 19:24:17,409 [INFO] AcceptBooking - 重复预约尝试：borjigin.mergen@icloud.com
+2025-04-08 19:24:17,410 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:24:17,412 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:24:18,476 [INFO] SendEmail - 邮件已成功发送给 luowei (25779367@qq.com)
+2025-04-08 19:24:18,479 [INFO] AcceptBooking - 预约成功：luowei (25779367@qq.com)，2021-10-02，时段A
+2025-04-08 19:24:18,481 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:24:29,874 [INFO] AcceptBooking - 重复预约尝试：borjigin.mergen@icloud.com
+2025-04-08 19:24:29,875 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:24:29,876 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:25:44,230 [INFO] SendEmail - 邮件已成功发送给 Sylvester Peng-Borjigin (sylvester.pengborjigin@gmail.com)
+2025-04-08 19:25:44,233 [INFO] AcceptBooking - 预约成功：Sylvester Peng-Borjigin (sylvester.pengborjigin@gmail.com)，2025-04-09，时段A
+2025-04-08 19:25:44,235 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-08 19:26:18,090 [INFO] AcceptBooking - 重复预约尝试：sylvester.pengborjigin@gmail.com
+2025-04-08 19:26:18,091 [WARNING] log - Bad Request: /tourists/book/
+2025-04-08 19:26:18,091 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-08 19:40:54,792 [INFO] basehttp - - Broken pipe from ('10.69.234.184', 62987)
+2025-04-08 20:33:35,721 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-04-08 20:35:38,062 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 20:35:38,065 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 20:35:47,386 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 20:38:12,437 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-04-08 20:40:10,562 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 20:40:10,611 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 20:40:19,132 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 20:44:20,788 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\urls.py changed, reloading.
+2025-04-08 20:44:24,432 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-08 20:44:24,433 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-08 20:44:24,671 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-08 20:44:49,517 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-08 20:44:49,519 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-1&time_slots=A HTTP/1.1" 404 3807
+2025-04-08 20:46:11,971 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-08 20:46:11,973 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-1&time_slots=A HTTP/1.1" 400 59
+2025-04-08 20:47:27,255 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-08 20:47:27,257 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 400 59
+2025-04-08 20:47:37,901 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-08 20:47:37,902 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 400 59
+2025-04-08 20:48:46,854 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-08 20:48:46,857 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91
+2025-04-08 20:59:37,689 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-08 20:59:37,691 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91

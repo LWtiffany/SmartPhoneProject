@@ -7,14 +7,14 @@ class Booking(models.Model):
         ('B', '中午'),
         ('C', '下午'),
     ]
-
+    name = models.CharField(max_length=50)
     email = models.EmailField()
     date = models.DateField()
     time_slot = models.CharField(max_length=1, choices=TIME_SLOTS)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.email} @ {self.date} {self.time_slot}'
+        return f"{self.name} ({self.email}) @ {self.date} {self.time_slot}"
 
 
 class GeoFence(models.Model):

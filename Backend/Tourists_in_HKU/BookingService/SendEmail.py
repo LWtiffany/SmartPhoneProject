@@ -7,11 +7,11 @@ import logging
 logger = logging.getLogger('Tourists_in_HKU')
 
 # @shared_task
-def send_success_email(email):
+def send_success_email(email,name):
     try:
         # 获取用户的姓名
         to_email = email
-        user_name = "Visitor"
+        user_name = name
 
         # 邮件内容包含用户的姓名
         subject = 'Booking Successful'

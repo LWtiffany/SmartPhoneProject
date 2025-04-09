@@ -10,7 +10,7 @@ class BookingForm(forms.ModelForm):
     ]
 
     time_slot = forms.ChoiceField(choices=TIME_SLOTS, label="预约时段")
-
+    name = forms.CharField(label='Your Name', max_length=50, required=True)
     class Meta:
         model = Booking
         fields = ['email', 'date', 'time_slot']

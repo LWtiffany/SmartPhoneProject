@@ -13,6 +13,7 @@ def book_tour_service(request):
         form = BookingForm(request.POST)
 
         if form.is_valid():
+            name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             date = form.cleaned_data['date']
             time_slot = form.cleaned_data['time_slot']
@@ -23,14 +24,16 @@ def book_tour_service(request):
 
             try:
                 booking = Booking.objects.create(
+                    name=name,
                     email=email,
                     date=date,
-                    time_slot=time_slot
+                    time_slot=time_slot,
                 )
 
-                send_success_email(email)
+                # ✅ 发邮件使用 name
+                send_success_email(email, name)
 
-                logger.info(f'预约成功：{email}，{date}，时段{time_slot}')
+                logger.info(f'预约成功：{name} ({email})，{date}，时段{time_slot}')
                 return JsonResponse({'message': 'Booking successful!'}, status=200)
 
             except Exception as e:
