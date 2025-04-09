@@ -1,18 +1,30 @@
 from django.db import models
 
-from django.db import models
-
 
 class Booking(models.Model):
-    name = models.CharField(max_length=100)  # 用户姓名
-    email = models.EmailField()  # 用户邮箱
-    phone = models.CharField(max_length=15)  # 用户电话
-    date = models.DateField()  # 预约日期
-    time = models.TimeField()  # 预约时间
-    notes = models.TextField(blank=True, null=True)  # 备注（可选）
+    TIME_SLOTS = [
+        ('A', '上午'),
+        ('B', '中午'),
+        ('C', '下午'),
+    ]
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
+    date = models.DateField()
+    time_slot = models.CharField(max_length=1, choices=TIME_SLOTS)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.name} - {self.date} {self.time}"
+        return f"{self.name} ({self.email}) @ {self.date} {self.time_slot}"
+
+
+class GeoFence(models.Model):
+    name = models.CharField(max_length=100)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    radius = models.FloatField()  # 单位：米
+
+    def __str__(self):
+        return f"{self.name} - ({self.latitude}, {self.longitude})"
 
 
 class Video(models.Model):
