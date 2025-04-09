@@ -27,7 +27,7 @@ def send_verification_code_service(email):
         store_verification_code(email, code)
 
         # 异步发送验证码邮件
-        send_verification_email.delay(email, code)  # 正确调用方式
+        send_verification_email(email, code)  # 正确调用方式
         logger.info(f"验证码已发送至邮箱：{email}")
         return {"status": 200, "message": "Verification code sent"}
     except Exception as e:
@@ -39,15 +39,32 @@ def verify_code_service(email, code):
     """
     校验验证码
     """
-    try:
-        stored_code = get_verification_code(email)
-        if stored_code and stored_code.decode() == code:
-            # 校验成功后删除验证码
-            logger.info(f"验证码校验成功：{email}")
-            return {"status": 200, "message": "Code verified"}
-        else:
-            logger.warning(f"验证码校验失败：{email}")
-            return {"status": 503, "message": "Invalid or expired code"}
-    except Exception as e:
-        logger.error(f"验证码校验异常：{str(e)}")
-        return {"status": "error", "message": "Verification failed"}
+    if request.method != 'POST':
+        return JsonResponse({"status": "error", "message": "Method not allowed"}, status=405)
+
+    email = request.POST.get("email")
+    code = request.POST.get("code")
+
+    if not email or not code:
+        return JsonResponse({"status": "error", "message": "Email and code are required"}, status=400)
+
+    # Step 1: 验证 Redis 中的验证码
+    stored_code = r.get(f"verify_code:{email}")
+
+    if stored_code is None:
+        logger.warning(f"验证码过期或不存在：{email}")
+        return JsonResponse({"status": "error", "message": "Verification code expired or not found"}, status=400)
+
+    if stored_code != code:
+        logger.warning(f"验证码不匹配：{email}")
+        return JsonResponse({"status": "error", "message": "Verification failed"}, status=400)
+
+    # Step 2: 查询 MySQL Booking 表
+    has_booking = Booking.objects.filter(email=email).exists()
+    logger.info(f"邮箱验证成功，是否预约：{email} → {has_booking}")
+
+    return JsonResponse({
+        "status": "success",
+        "message": "Verification successful",
+        "Booked": True
+    }, status=200)
