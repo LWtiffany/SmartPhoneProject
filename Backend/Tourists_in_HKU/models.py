@@ -11,6 +11,7 @@ class Booking(models.Model):
     email = models.EmailField()
     date = models.DateField()
     time_slot = models.CharField(max_length=1, choices=TIME_SLOTS)
+    guide = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

@@ -31,3 +31,572 @@
 2025-04-09 14:22:13,221 [INFO] autoreload - Watching for file changes with StatReloader
 2025-04-09 14:22:18,244 [INFO] basehttp - "GET /tourists/get_information/?email=2577933967@qq.com HTTP/1.1" 200 115
 2025-04-09 14:22:40,528 [INFO] basehttp - "GET /tourists/get_information/?email=borjigin.mergen@icloud.com HTTP/1.1" 200 130
+2025-04-09 14:26:13,947 [INFO] basehttp - "GET /tourists/get_information/?email=2577933967@qq.com HTTP/1.1" 200 115
+2025-04-10 18:05:13,939 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:13,941 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:19,752 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:19,753 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:20,087 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:20,092 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:20,510 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:20,512 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:21,155 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:21,162 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:21,781 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:21,785 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:22,327 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:22,331 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:22,893 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:22,894 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:22,959 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:22,960 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:56,939 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:56,939 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:59,344 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:05:59,344 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:05:59,511 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-10 18:11:07,949 [INFO] verify - 验证码邮件已成功发送给 sylvester.peng@icloud.com
+2025-04-10 18:11:07,952 [INFO] verification_service - 验证码已发送至邮箱：sylvester.peng@icloud.com
+2025-04-10 18:11:07,955 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:14:56,789 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：322619 对应邮箱：sylvester.peng@icloud.com
+2025-04-10 18:14:56,790 [INFO] VerifyEmailCode - 验证码验证成功：sylvester.peng@icloud.com
+2025-04-10 18:14:56,793 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 18:15:31,787 [INFO] SendEmail - 邮件已成功发送给 Sylvester Peng (sylvester.peng@icloud.com)
+2025-04-10 18:15:31,790 [INFO] AcceptBooking - 预约成功：Sylvester Peng (sylvester.peng@icloud.com)，2025-04-16，时段B
+2025-04-10 18:15:31,792 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 18:21:11,865 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\VerificationService\verify.py changed, reloading.
+2025-04-10 18:21:21,800 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:21:21,801 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:21:22,639 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-10 18:25:57,101 [INFO] verify - 验证码邮件已成功发送给 tiffanyluo2868@163.com
+2025-04-10 18:25:57,103 [INFO] verification_service - 验证码已发送至邮箱：tiffanyluo2868@163.com
+2025-04-10 18:25:57,107 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:26:50,359 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:26:50,378 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:26:50,380 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:26:50,383 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:26:50,383 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:26:50,383 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:27:32,924 [INFO] verify - 验证码邮件已成功发送给 sylvester.peng@icloud.com
+2025-04-10 18:27:32,925 [INFO] verification_service - 验证码已发送至邮箱：sylvester.peng@icloud.com
+2025-04-10 18:27:32,926 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:28:13,108 [INFO] verification_service - 邮箱 sylvester.peng@icloud.com 的验证码已存在，未重新生成
+2025-04-10 18:28:13,109 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 60
+2025-04-10 18:29:30,227 [INFO] verification_service - 邮箱 sylvester.peng@icloud.com 的验证码已存在，未重新生成
+2025-04-10 18:29:30,228 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 60
+2025-04-10 18:30:25,117 [INFO] verify - 验证码邮件已成功发送给 sylvester.peng@icloud.com
+2025-04-10 18:30:25,121 [INFO] verification_service - 验证码已发送至邮箱：sylvester.peng@icloud.com
+2025-04-10 18:30:25,122 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:30:50,348 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：041237 对应邮箱：sylvester.peng@icloud.com
+2025-04-10 18:30:50,348 [INFO] VerifyEmailCode - 验证码验证成功：sylvester.peng@icloud.com
+2025-04-10 18:30:50,349 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 18:30:54,548 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:30:54,558 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:30:54,567 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:30:54,569 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:30:54,569 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:30:54,570 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:00,841 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:00,847 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:00,853 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:00,854 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:31:00,855 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:00,855 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:31:02,953 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:02,959 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:02,968 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:02,970 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-19&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:31:02,970 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-19&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:31:02,972 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-19&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:05,069 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:05,071 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:05,092 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:05,095 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-14&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:31:05,122 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-14&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:05,127 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-14&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:31:41,264 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:41,282 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:41,317 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:41,317 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-15&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:31:41,319 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-15&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:31:41,323 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-15&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:43,418 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:43,566 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:43,589 [WARNING] log - Not Found: /tourists/book/remaining_slots/
+2025-04-10 18:31:43,590 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=A HTTP/1.1" 404 4102
+2025-04-10 18:31:43,593 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=B HTTP/1.1" 404 4102
+2025-04-10 18:31:43,593 [WARNING] basehttp - "GET /tourists/book/remaining_slots/?date=2025-04-16&time_slots=C HTTP/1.1" 404 4102
+2025-04-10 18:32:39,507 [INFO] SendEmail - 邮件已成功发送给 Sylvester Peng (sylvester.peng@icloud.com)
+2025-04-10 18:32:39,509 [INFO] AcceptBooking - 预约成功：Sylvester Peng (sylvester.peng@icloud.com)，2025-04-16，时段C
+2025-04-10 18:32:39,509 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 18:36:54,737 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:54,738 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:54,739 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:54,740 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:36:54,741 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:36:54,741 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:36:56,827 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:56,828 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:56,829 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:36:56,832 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:36:56,833 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:36:56,833 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:37:03,119 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:37:03,120 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:37:03,122 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:37:03,123 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:37:03,124 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:37:03,125 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:37:43,774 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:37:43,775 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:38:29,143 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:29,145 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:29,146 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:29,149 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:38:29,149 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:38:29,150 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:38:34,337 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:34,338 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:34,340 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:38:34,341 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:38:34,342 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:38:34,342 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:38:37,505 [INFO] AcceptBooking - 重复预约尝试：sylvester.peng@icloud.com
+2025-04-10 18:38:37,505 [WARNING] log - Bad Request: /tourists/book/
+2025-04-10 18:38:37,506 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-10 18:39:27,884 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:27,885 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:27,886 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:27,888 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-12&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:39:27,888 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-12&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:39:27,889 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-12&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:39:29,914 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:29,915 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:29,916 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:29,917 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-18&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:39:29,917 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-18&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:39:29,917 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-18&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:39:31,002 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:31,003 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:31,004 [WARNING] log - Bad Request: /tourists/remaining_slots/
+2025-04-10 18:39:31,005 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-19&time_slots=B HTTP/1.1" 400 59
+2025-04-10 18:39:31,005 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-19&time_slots=A HTTP/1.1" 400 59
+2025-04-10 18:39:31,007 [WARNING] basehttp - "GET /tourists/remaining_slots/?date=2025-04-19&time_slots=C HTTP/1.1" 400 59
+2025-04-10 18:40:40,706 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:40:40,707 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:40:40,738 [WARNING] log - Not Found: /favicon.ico
+2025-04-10 18:40:40,739 [WARNING] basehttp - "GET /favicon.ico HTTP/1.1" 404 2746
+2025-04-10 18:42:37,691 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:42:37,692 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:42:37,692 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:42:37,693 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:42:37,694 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:42:37,695 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:42:39,169 [INFO] remaining_slot - 查询剩余名额：2025-04-17 A → 已预约 0，剩余 100
+2025-04-10 18:42:39,170 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-17&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:42:39,171 [INFO] remaining_slot - 查询剩余名额：2025-04-17 C → 已预约 0，剩余 100
+2025-04-10 18:42:39,172 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-17&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:42:39,188 [INFO] remaining_slot - 查询剩余名额：2025-04-17 B → 已预约 0，剩余 100
+2025-04-10 18:42:39,189 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-17&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:42:41,792 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:42:41,792 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:42:41,793 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:42:41,795 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:42:41,795 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:42:41,795 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:42:45,463 [INFO] AcceptBooking - 重复预约尝试：sylvester.peng@icloud.com
+2025-04-10 18:42:45,464 [WARNING] log - Bad Request: /tourists/book/
+2025-04-10 18:42:45,465 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-10 18:42:48,621 [INFO] remaining_slot - 查询剩余名额：2025-04-11 C → 已预约 0，剩余 100
+2025-04-10 18:42:48,621 [INFO] remaining_slot - 查询剩余名额：2025-04-11 B → 已预约 0，剩余 100
+2025-04-10 18:42:48,623 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:42:48,623 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:42:48,625 [INFO] remaining_slot - 查询剩余名额：2025-04-11 A → 已预约 0，剩余 100
+2025-04-10 18:42:48,626 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:42:49,660 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:42:49,661 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:42:49,662 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:42:49,662 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:42:49,663 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:42:49,664 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:43:18,507 [INFO] AcceptBooking - 重复预约尝试：sylvester.peng@icloud.com
+2025-04-10 18:43:18,508 [WARNING] log - Bad Request: /tourists/book/
+2025-04-10 18:43:18,509 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 52
+2025-04-10 18:43:21,116 [INFO] remaining_slot - 查询剩余名额：2025-04-11 A → 已预约 0，剩余 100
+2025-04-10 18:43:21,116 [INFO] remaining_slot - 查询剩余名额：2025-04-11 C → 已预约 0，剩余 100
+2025-04-10 18:43:21,117 [INFO] remaining_slot - 查询剩余名额：2025-04-11 B → 已预约 0，剩余 100
+2025-04-10 18:43:21,118 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:43:21,118 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:43:21,118 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-11&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:43:56,606 [INFO] verify - 验证码邮件已成功发送给 borjigin.mergen@icloud.com
+2025-04-10 18:43:56,607 [INFO] verification_service - 验证码已发送至邮箱：borjigin.mergen@icloud.com
+2025-04-10 18:43:56,608 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:44:22,999 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：225449 对应邮箱：borjigin.mergen@icloud.com
+2025-04-10 18:44:23,000 [INFO] VerifyEmailCode - 验证码验证成功：borjigin.mergen@icloud.com
+2025-04-10 18:44:23,001 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 18:44:26,709 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:44:26,710 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:44:26,710 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:44:26,711 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:44:26,711 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:44:26,712 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:44:29,267 [INFO] remaining_slot - 查询剩余名额：2025-04-16 B → 已预约 0，剩余 100
+2025-04-10 18:44:29,268 [INFO] remaining_slot - 查询剩余名额：2025-04-16 A → 已预约 0，剩余 100
+2025-04-10 18:44:29,268 [INFO] remaining_slot - 查询剩余名额：2025-04-16 C → 已预约 1，剩余 99
+2025-04-10 18:44:29,269 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:44:29,269 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:44:29,270 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=C HTTP/1.1" 200 91
+2025-04-10 18:44:37,145 [INFO] SendEmail - 邮件已成功发送给 Borjigin Mergen (borjigin.mergen@icloud.com)
+2025-04-10 18:44:37,147 [INFO] AcceptBooking - 预约成功：Borjigin Mergen (borjigin.mergen@icloud.com)，2025-04-16，时段C
+2025-04-10 18:44:37,147 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 18:44:40,282 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:44:40,282 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:44:40,283 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:44:40,284 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:44:40,284 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:44:40,285 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:44:41,449 [INFO] remaining_slot - 查询剩余名额：2025-04-16 C → 已预约 2，剩余 98
+2025-04-10 18:44:41,449 [INFO] remaining_slot - 查询剩余名额：2025-04-16 A → 已预约 0，剩余 100
+2025-04-10 18:44:41,450 [INFO] remaining_slot - 查询剩余名额：2025-04-16 B → 已预约 0，剩余 100
+2025-04-10 18:44:41,451 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=C HTTP/1.1" 200 91
+2025-04-10 18:44:41,453 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:44:41,453 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:45:31,659 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:45:31,659 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:45:31,661 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:45:31,661 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:45:31,663 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:45:31,663 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:45:55,710 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-10 18:45:58,172 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 18:45:58,173 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 18:45:58,350 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-10 18:46:09,952 [INFO] remaining_slot - 查询剩余名额：2025-04-15 A → 已预约 0，剩余 100
+2025-04-10 18:46:09,954 [INFO] remaining_slot - 查询剩余名额：2025-04-15 C → 已预约 0，剩余 100
+2025-04-10 18:46:09,955 [INFO] remaining_slot - 查询剩余名额：2025-04-15 B → 已预约 0，剩余 100
+2025-04-10 18:46:09,955 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:46:09,956 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:46:09,956 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:46:17,387 [INFO] SendEmail - 邮件已成功发送给 Borjigin Mergen (borjigin.mergen@icloud.com)
+2025-04-10 18:46:17,388 [INFO] AcceptBooking - 预约成功：Borjigin Mergen (borjigin.mergen@icloud.com)，2025-04-15，时段C
+2025-04-10 18:46:17,389 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 18:46:20,945 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:46:20,946 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:46:20,967 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:46:20,967 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:46:20,969 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:46:20,970 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:46:22,523 [INFO] remaining_slot - 查询剩余名额：2025-04-15 B → 已预约 0，剩余 100
+2025-04-10 18:46:22,524 [INFO] remaining_slot - 查询剩余名额：2025-04-15 A → 已预约 0，剩余 100
+2025-04-10 18:46:22,527 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:46:22,528 [INFO] remaining_slot - 查询剩余名额：2025-04-15 C → 已预约 1，剩余 99
+2025-04-10 18:46:22,529 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:46:22,530 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=C HTTP/1.1" 200 91
+2025-04-10 18:52:45,796 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:52:45,796 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:52:45,796 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:52:45,798 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:52:45,798 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:52:45,799 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:52:50,010 [INFO] remaining_slot - 查询剩余名额：2025-04-16 A → 已预约 0，剩余 100
+2025-04-10 18:52:50,011 [INFO] remaining_slot - 查询剩余名额：2025-04-16 C → 已预约 2，剩余 98
+2025-04-10 18:52:50,011 [INFO] remaining_slot - 查询剩余名额：2025-04-16 B → 已预约 0，剩余 100
+2025-04-10 18:52:50,013 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:52:50,014 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=C HTTP/1.1" 200 91
+2025-04-10 18:52:50,015 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:53:20,372 [INFO] verify - 验证码邮件已成功发送给 sylvester.peng@icloud.com
+2025-04-10 18:53:20,373 [INFO] verification_service - 验证码已发送至邮箱：sylvester.peng@icloud.com
+2025-04-10 18:53:20,375 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:53:35,050 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：716638 对应邮箱：sylvester.peng@icloud.com
+2025-04-10 18:53:35,050 [WARNING] VerifyEmailCode - 验证码验证失败：sylvester.peng@icloud.com
+2025-04-10 18:53:35,052 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 53
+2025-04-10 18:55:05,331 [INFO] verify - 验证码邮件已成功发送给 borjigin.mergen@icloud.com
+2025-04-10 18:55:05,332 [INFO] verification_service - 验证码已发送至邮箱：borjigin.mergen@icloud.com
+2025-04-10 18:55:05,333 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 18:55:50,962 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：467282 对应邮箱：borjigin.mergen@icloud.com
+2025-04-10 18:55:50,962 [INFO] VerifyEmailCode - 验证码验证成功：borjigin.mergen@icloud.com
+2025-04-10 18:55:50,963 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 18:56:00,360 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 18:56:00,363 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:56:00,363 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 18:56:00,365 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:56:00,366 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 18:56:00,367 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 18:56:02,893 [INFO] remaining_slot - 查询剩余名额：2025-04-16 C → 已预约 2，剩余 98
+2025-04-10 18:56:02,895 [INFO] remaining_slot - 查询剩余名额：2025-04-16 B → 已预约 0，剩余 100
+2025-04-10 18:56:02,895 [INFO] remaining_slot - 查询剩余名额：2025-04-16 A → 已预约 0，剩余 100
+2025-04-10 18:56:02,896 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=C HTTP/1.1" 200 91
+2025-04-10 18:56:02,896 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=B HTTP/1.1" 200 92
+2025-04-10 18:56:02,897 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-16&time_slot=A HTTP/1.1" 200 92
+2025-04-10 18:56:14,511 [INFO] SendEmail - 邮件已成功发送给 Borjigin Mergen (borjigin.mergen@icloud.com)
+2025-04-10 18:56:14,514 [INFO] AcceptBooking - 预约成功：Borjigin Mergen (borjigin.mergen@icloud.com)，2025-04-16，时段C
+2025-04-10 18:56:14,516 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 19:21:31,173 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 19:21:31,176 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 19:21:31,190 [WARNING] log - Not Found: /apple-touch-icon-precomposed.png
+2025-04-10 19:21:31,194 [WARNING] basehttp - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2830
+2025-04-10 19:21:31,203 [WARNING] log - Not Found: /apple-touch-icon.png
+2025-04-10 19:21:31,211 [WARNING] log - Not Found: /favicon.ico
+2025-04-10 19:21:31,212 [WARNING] basehttp - "GET /favicon.ico HTTP/1.1" 404 2746
+2025-04-10 19:21:31,212 [WARNING] basehttp - "GET /apple-touch-icon.png HTTP/1.1" 404 2782
+2025-04-10 19:59:20,841 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-10 20:04:08,049 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-10 20:04:08,051 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-10 20:04:08,699 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-10 20:04:19,708 [INFO] verify - 验证码邮件已成功发送给 sylvester.peng@icloud.com
+2025-04-10 20:04:19,710 [INFO] verification_service - 验证码已发送至邮箱：sylvester.peng@icloud.com
+2025-04-10 20:04:19,713 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 20:04:42,935 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：762941 对应邮箱：sylvester.peng@icloud.com
+2025-04-10 20:04:42,936 [INFO] VerifyEmailCode - 验证码验证成功：sylvester.peng@icloud.com
+2025-04-10 20:04:42,937 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 20:04:53,486 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 20:04:53,487 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 20:04:53,488 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 20:04:53,491 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 20:04:53,491 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 20:04:53,493 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 20:04:55,357 [INFO] remaining_slot - 查询剩余名额：2025-04-15 A → 已预约 0，剩余 100
+2025-04-10 20:04:55,358 [INFO] remaining_slot - 查询剩余名额：2025-04-15 B → 已预约 0，剩余 100
+2025-04-10 20:04:55,359 [INFO] remaining_slot - 查询剩余名额：2025-04-15 C → 已预约 1，剩余 99
+2025-04-10 20:04:55,361 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=A HTTP/1.1" 200 92
+2025-04-10 20:04:55,362 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=B HTTP/1.1" 200 92
+2025-04-10 20:04:55,362 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-15&time_slot=C HTTP/1.1" 200 91
+2025-04-10 20:05:04,762 [INFO] SendEmail - 邮件已成功发送给 Sylvester Peng (sylvester.peng@icloud.com)
+2025-04-10 20:05:04,763 [INFO] AcceptBooking - 预约成功：Sylvester Peng (sylvester.peng@icloud.com)，2025-04-15，时段C
+2025-04-10 20:05:04,764 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 20:05:47,872 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 20:05:47,873 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 20:05:47,874 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 20:05:47,874 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 20:05:47,875 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 20:05:47,876 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 20:05:49,008 [INFO] remaining_slot - 查询剩余名额：2025-04-20 C → 已预约 0，剩余 100
+2025-04-10 20:05:49,010 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-20&time_slot=C HTTP/1.1" 200 92
+2025-04-10 20:05:49,012 [INFO] remaining_slot - 查询剩余名额：2025-04-20 A → 已预约 0，剩余 100
+2025-04-10 20:05:49,012 [INFO] remaining_slot - 查询剩余名额：2025-04-20 B → 已预约 0，剩余 100
+2025-04-10 20:05:49,014 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-20&time_slot=A HTTP/1.1" 200 92
+2025-04-10 20:05:49,014 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-20&time_slot=B HTTP/1.1" 200 92
+2025-04-10 20:05:57,029 [INFO] SendEmail - 邮件已成功发送给 Sylvester Peng (sylvester.peng@icloud.com)
+2025-04-10 20:05:57,031 [INFO] AcceptBooking - 预约成功：Sylvester Peng (sylvester.peng@icloud.com)，2025-04-20，时段A
+2025-04-10 20:05:57,033 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-10 21:05:54,071 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:05:54,123 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:05:54,141 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:05:54,199 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:05:54,400 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:05:54,643 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:07,030 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:06:07,031 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:06:07,032 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:06:07,057 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:07,092 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:06:07,103 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:06:15,241 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:06:15,241 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:06:15,246 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:06:15,262 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:06:15,273 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:15,316 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:06:31,709 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:06:31,709 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:06:31,709 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:06:31,711 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:06:31,711 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:06:31,712 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:38,102 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:06:38,103 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:06:38,104 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:06:38,104 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:38,114 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:06:38,115 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:06:51,710 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:06:51,711 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:06:51,712 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:06:51,712 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:06:51,713 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:06:51,715 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:07:02,677 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:07:02,678 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:07:02,679 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:07:02,680 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:07:02,691 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:07:02,693 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:07:47,398 [INFO] verify - 验证码邮件已成功发送给 2577933967@qq.com
+2025-04-10 21:07:47,399 [INFO] verification_service - 验证码已发送至邮箱：2577933967@qq.com
+2025-04-10 21:07:47,401 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-10 21:08:04,915 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：493516 对应邮箱：2577933967@qq.com
+2025-04-10 21:08:04,915 [INFO] VerifyEmailCode - 验证码验证成功：2577933967@qq.com
+2025-04-10 21:08:04,917 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-10 21:08:08,707 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 0，剩余 100
+2025-04-10 21:08:08,709 [INFO] remaining_slot - 查询剩余名额：2025-04-10 B → 已预约 0，剩余 100
+2025-04-10 21:08:08,710 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 92
+2025-04-10 21:08:08,711 [INFO] remaining_slot - 查询剩余名额：2025-04-10 C → 已预约 0，剩余 100
+2025-04-10 21:08:08,713 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=B HTTP/1.1" 200 92
+2025-04-10 21:08:08,713 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=C HTTP/1.1" 200 92
+2025-04-10 21:08:25,076 [INFO] SendEmail - 邮件已成功发送给 d (2577933967@qq.com)
+2025-04-10 21:08:25,077 [INFO] AcceptBooking - 预约成功：d (2577933967@qq.com)，2025-04-10，时段A
+2025-04-10 21:08:25,078 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-14 16:12:49,204 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:12:49,207 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:05,338 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:05,339 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:05,437 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:05,438 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:05,556 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:05,559 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:06,105 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:06,109 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:06,127 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:06,128 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:06,140 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:06,150 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:06,397 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:06,413 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:06,959 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:06,959 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:08,364 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:08,365 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:12,581 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 16:13:12,581 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 16:13:12,821 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-14 16:14:54,221 [INFO] SendEmail - 邮件已成功发送给 luowei (2577367@qq.com)
+2025-04-14 16:14:54,223 [INFO] AcceptBooking - 预约成功：luowei (2577367@qq.com)，2021-10-02，时段A
+2025-04-14 16:14:54,227 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-14 16:16:31,408 [INFO] verify - 验证码邮件已成功发送给 18874861810@163.com
+2025-04-14 16:16:31,410 [INFO] verification_service - 验证码已发送至邮箱：18874861810@163.com
+2025-04-14 16:16:31,411 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-14 16:16:47,608 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：126913 对应邮箱：18874861810@163.com
+2025-04-14 16:16:47,609 [INFO] VerifyEmailCode - 验证码验证成功：18874861810@163.com
+2025-04-14 16:16:47,610 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-14 16:55:55,136 [INFO] verify - 验证码邮件已成功发送给 18874861810@163.com
+2025-04-14 16:55:55,137 [INFO] verification_service - 验证码已发送至邮箱：18874861810@163.com
+2025-04-14 16:55:55,138 [INFO] basehttp - "POST /tourists/send_code/ HTTP/1.1" 200 52
+2025-04-14 16:56:15,028 [INFO] VerifyEmailCode - 从 Redis 中获取验证码：801416 对应邮箱：18874861810@163.com
+2025-04-14 16:56:15,028 [INFO] VerifyEmailCode - 验证码验证成功：18874861810@163.com
+2025-04-14 16:56:15,029 [INFO] basehttp - "POST /tourists/verify_code/ HTTP/1.1" 200 59
+2025-04-14 18:51:31,805 [WARNING] log - Not Found: /apple-touch-icon.png
+2025-04-14 18:51:31,812 [WARNING] log - Not Found: /favicon.ico
+2025-04-14 18:51:31,812 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-14 18:51:31,814 [WARNING] basehttp - "GET /apple-touch-icon.png HTTP/1.1" 404 2782
+2025-04-14 18:51:31,815 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91
+2025-04-14 18:51:31,815 [WARNING] basehttp - "GET /favicon.ico HTTP/1.1" 404 2746
+2025-04-14 18:51:32,610 [WARNING] log - Not Found: /apple-touch-icon-precomposed.png
+2025-04-14 18:51:32,611 [WARNING] basehttp - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2830
+2025-04-14 23:54:19,700 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-14 23:54:19,712 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91
+2025-04-14 23:54:19,899 [WARNING] log - Not Found: /favicon.ico
+2025-04-14 23:54:19,900 [WARNING] basehttp - "GET /favicon.ico HTTP/1.1" 404 2742
+2025-04-14 23:58:21,620 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\views.py changed, reloading.
+2025-04-14 23:58:24,928 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-14 23:58:24,928 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-14 23:58:25,169 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-14 23:58:37,347 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-14 23:58:37,349 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91
+2025-04-14 23:59:12,260 [INFO] remaining_slot - 查询剩余名额：2025-04-10 A → 已预约 1，剩余 99
+2025-04-14 23:59:12,262 [INFO] basehttp - "GET /tourists/remaining_slots/?date=2025-04-10&time_slot=A HTTP/1.1" 200 91
+2025-04-19 15:25:40,956 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:25:40,957 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:25:52,981 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:25:52,981 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:30:54,558 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:30:54,559 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:30:57,279 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:30:57,280 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:30:57,490 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-19 15:32:06,963 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:06,964 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:12,191 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:12,191 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:12,274 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:12,275 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:12,540 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:12,542 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:12,650 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:12,653 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:12,925 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:12,925 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:13,184 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:13,188 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:13,222 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:13,224 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:32:13,595 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:32:13,595 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:16,473 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:16,473 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:22,752 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:22,755 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:22,981 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:22,984 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:23,530 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:23,534 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:23,608 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:23,609 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:23,870 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:23,873 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:24,346 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:24,350 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:24,723 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:24,727 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:25,162 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:25,164 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:25,358 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:25,359 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:28,068 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:43:28,069 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:43:28,233 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-19 15:47:30,683 [INFO] basehttp - "GET /tourists/book/ HTTP/1.1" 200 1285
+2025-04-19 15:47:30,890 [WARNING] log - Not Found: /favicon.ico
+2025-04-19 15:47:30,892 [WARNING] basehttp - "GET /favicon.ico HTTP/1.1" 404 2742
+2025-04-19 15:47:45,881 [ERROR] AcceptBooking - 预约失败：(1054, "Unknown column 'guide' in 'field list'")
+2025-04-19 15:47:45,882 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-19 15:47:45,884 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-19 15:50:27,152 [ERROR] AcceptBooking - 预约失败：send_success_email() takes 2 positional arguments but 3 were given
+2025-04-19 15:50:27,153 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-19 15:50:27,153 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-19 15:52:17,639 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:52:17,640 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:52:53,621 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:52:53,621 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:53:19,161 [ERROR] AcceptBooking - 预约失败：send_success_email() takes 2 positional arguments but 3 were given
+2025-04-19 15:53:19,162 [ERROR] log - Internal Server Error: /tourists/book/
+2025-04-19 15:53:19,163 [ERROR] basehttp - "POST /tourists/book/ HTTP/1.1" 500 27
+2025-04-19 15:54:02,418 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\AcceptBooking.py changed, reloading.
+2025-04-19 15:54:04,608 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 15:54:04,609 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 15:54:04,781 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-19 15:54:19,729 [INFO] SendEmail - 邮件已成功发送给 骆苇 (u3638153@connect.hku.hk)
+2025-04-19 15:54:19,731 [INFO] AcceptBooking - 预约成功：骆苇 (u3638153@connect.hku.hk)，2020-06-10，时段B，需要导游: True
+2025-04-19 15:54:19,734 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-19 15:54:38,631 [INFO] SendEmail - 邮件已成功发送给 骆苇 (u3638153@connect.hku.hk)
+2025-04-19 15:54:38,633 [INFO] AcceptBooking - 预约成功：骆苇 (u3638153@connect.hku.hk)，2020-06-10，时段B，需要导游: True
+2025-04-19 15:54:38,635 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-19 15:55:26,527 [INFO] basehttp - "GET /tourists/book/ HTTP/1.1" 200 1285
+2025-04-19 15:55:33,966 [INFO] SendEmail - 邮件已成功发送给 骆苇 (u3638153@connect.hku.hk)
+2025-04-19 15:55:33,969 [INFO] AcceptBooking - 预约成功：骆苇 (u3638153@connect.hku.hk)，2020-06-10，时段B，需要导游: False
+2025-04-19 15:55:33,970 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-19 16:00:41,096 [WARNING] log - Bad Request: /tourists/get_information/
+2025-04-19 16:00:41,097 [WARNING] basehttp - "GET /tourists/get_information/ HTTP/1.1" 400 51
+2025-04-19 16:00:49,263 [WARNING] log - Bad Request: /tourists/get_information/
+2025-04-19 16:00:49,264 [WARNING] basehttp - "GET /tourists/get_information/ HTTP/1.1" 400 51
+2025-04-19 16:01:24,856 [INFO] basehttp - "GET /tourists/get_information/?email=u3638153@connnect.hku.hk HTTP/1.1" 200 122
+2025-04-19 16:02:01,056 [INFO] basehttp - "GET /tourists/get_information/?email=u3638153@connect.hku.hk HTTP/1.1" 200 401
+2025-04-19 16:04:25,351 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\get_information.py changed, reloading.
+2025-04-19 16:04:27,684 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 16:04:27,684 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 16:04:27,845 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-19 16:05:06,730 [ERROR] get_information - 查询邮箱预约失败：Object of type bytes is not JSON serializable
+2025-04-19 16:05:06,731 [ERROR] log - Internal Server Error: /tourists/get_information/
+2025-04-19 16:05:06,732 [ERROR] basehttp - "GET /tourists/get_information/?email=u3638153@connect.hku.hk HTTP/1.1" 500 46
+2025-04-19 16:06:03,912 [ERROR] get_information - 查询邮箱预约失败：Object of type bytes is not JSON serializable
+2025-04-19 16:06:03,913 [ERROR] log - Internal Server Error: /tourists/get_information/
+2025-04-19 16:06:03,914 [ERROR] basehttp - "GET /tourists/get_information/?email=u3638153@connect.hku.hk HTTP/1.1" 500 46
+2025-04-19 16:06:07,718 [ERROR] get_information - 查询邮箱预约失败：Object of type bytes is not JSON serializable
+2025-04-19 16:06:07,718 [ERROR] log - Internal Server Error: /tourists/get_information/
+2025-04-19 16:06:07,719 [ERROR] basehttp - "GET /tourists/get_information/?email=u3638153@connect.hku.hk HTTP/1.1" 500 46
+2025-04-19 16:06:44,713 [ERROR] get_information - 查询邮箱预约失败：Object of type bytes is not JSON serializable
+2025-04-19 16:06:44,713 [ERROR] log - Internal Server Error: /tourists/get_information/
+2025-04-19 16:06:44,714 [ERROR] basehttp - "GET /tourists/get_information/?email=u3638153@connect.hku.hk HTTP/1.1" 500 46
+2025-04-19 16:07:21,550 [INFO] autoreload - G:\MasterMaterial\SmartPhone\Project\Backend\Tourists_in_HKU\BookingService\get_information.py changed, reloading.
+2025-04-19 16:07:23,808 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-19 16:07:23,809 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-19 16:07:23,984 [INFO] autoreload - Watching for file changes with StatReloader

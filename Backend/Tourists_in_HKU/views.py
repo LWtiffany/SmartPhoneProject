@@ -33,10 +33,10 @@ def book_tour(request):
 from django.http import JsonResponse, HttpResponseNotAllowed
 from .VerificationService.verification_service import send_verification_code_service
 
-from django.http import JsonResponse, HttpResponseNotAllowed
-from .VerificationService.verification_service import send_verification_code_service
 
-from django.http import JsonResponse
+
+
+
 import json
 from .VerificationService.VerifyEmailCode import verify_verification_code_service
 
