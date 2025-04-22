@@ -1,56 +1,30 @@
-from django.core.mail import EmailMessage
-from django.conf import settings
 import logging
+
+from django.conf import settings
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
 
 logger = logging.getLogger('Tourists_in_HKU')
 
 
 def send_verification_email(email, code):
     """
-    发送验证码邮件（HTML 格式）
+    Send verification code email using HTML template
     """
     subject = "Your Verification Code"
-    html_content = f"""
-    <html>
-        <head>
-            <style>
-                body {{
-                    font-family: Arial, sans-serif;
-                    color: #333333;
-                }}
-                .container {{
-                    max-width: 600px;
-                    margin: auto;
-                    padding: 20px;
-                    border: 1px solid #e0e0e0;
-                    border-radius: 10px;
-                    background-color: #f9f9f9;
-                }}
-                .code {{
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: #4CAF50;
-                    margin: 20px 0;
-                }}
-                .footer {{
-                    font-size: 12px;
-                    color: #888888;
-                    margin-top: 30px;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h2>Verification Code</h2>
-                <p>Hello,</p>
-                <p>Your verification code is:</p>
-                <div class="code">{code}</div>
-                <p>This code is valid for 10 minutes. Please do not share it with anyone.</p>
-                <div class="footer">This is an automated email. Please do not reply.</div>
-            </div>
-        </body>
-    </html>
-    """
+
+    # Render the HTML template with context
+    html_content = render_to_string(
+        'Tourists_in_HKU/verify.html',
+        {
+            'verification_code': code,
+            # Simple approach to get a name from email
+            'user_name': email.split('@')[0],
+            'logo_url': settings.LOGO_URL,
+            'hku_img_url': settings.HKU_IMG_URL,
+        }
+    )
+
     from_email = settings.DEFAULT_FROM_EMAIL
 
     try:
@@ -60,7 +34,7 @@ def send_verification_email(email, code):
             from_email=from_email,
             to=[email]
         )
-        email_message.content_subtype = 'html'  # 设置为 HTML
+        email_message.content_subtype = 'html'  # Set as HTML
         email_message.send()
         logger.info(f"验证码邮件已成功发送给 {email}")
         return f"Email successfully sent to {email}"
