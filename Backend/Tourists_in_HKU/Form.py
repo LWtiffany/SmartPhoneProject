@@ -15,10 +15,8 @@ class BookingForm(forms.ModelForm):
     # 用户姓名输入
     name = forms.CharField(label='Your Name', max_length=50, required=True)
 
-    # 是否需要导游，True 或 False
-    guide = forms.BooleanField(label="需要导游", required=False)  # 默认为 False，表示不需要导游
 
     class Meta:
         model = Booking
-        fields = ['email', 'date', 'time_slot', 'name', 'guide']  # 增加了 'name' 和 'guide'
+        fields = ['email', 'date', 'time_slot', 'name']  # 增加了 'name' 和 'guide'
 

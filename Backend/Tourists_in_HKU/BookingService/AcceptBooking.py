@@ -17,27 +17,19 @@ def book_tour_service(request):
             email = form.cleaned_data['email']
             date = form.cleaned_data['date']
             time_slot = form.cleaned_data['time_slot']
-            guide = form.cleaned_data['guide']  # ✅ 获取 guide 字段（是否需要导游）
-
-            # 你可以选择是否保留邮箱重复验证逻辑
-            # if Booking.objects.filter(email=email).exists():
-            #     logger.info(f'重复预约尝试：{email}')
-            #     return JsonResponse({'message': 'This email has already booked a tour.'}, status=400)
 
             try:
-                # ✅ 创建预约记录时，保存 guide 字段
+                # 创建预约记录时不再保存 guide 字段
                 booking = Booking.objects.create(
                     name=name,
                     email=email,
                     date=date,
                     time_slot=time_slot,
-                    guide=guide,  # ✅ 保存 guide 字段
                 )
 
-                # ✅ 发邮件时传递 guide 信息（告知用户是否需要导游）
-                send_success_email(email, name)
+                send_success_email(email, name)  # 只发包含 name 的邮件
 
-                logger.info(f'预约成功：{name} ({email})，{date}，时段{time_slot}，需要导游: {guide}')
+                logger.info(f'预约成功：{name} ({email})，{date}，时段{time_slot}')
                 return JsonResponse({'message': 'Booking successful!'}, status=200)
 
             except Exception as e:

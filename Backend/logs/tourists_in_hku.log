@@ -600,3 +600,43 @@
 2025-04-19 16:07:23,808 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
 2025-04-19 16:07:23,809 [INFO] __init__ - VerificationService: 成功加载验证码服务
 2025-04-19 16:07:23,984 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-19 16:13:25,348 [INFO] basehttp - "GET /tourists/book/ HTTP/1.1" 200 1285
+2025-04-19 16:13:50,698 [INFO] SendEmail - 邮件已成功发送给 sylvester (u3638153@connect.hku.hk)
+2025-04-19 16:13:50,699 [INFO] AcceptBooking - 预约成功：sylvester (u3638153@connect.hku.hk)，2020-06-10，时段A，需要导游: True
+2025-04-19 16:13:50,700 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-19 16:16:06,859 [INFO] SendEmail - 邮件已成功发送给 sylvester (u3638153@connect.hku.hk)
+2025-04-19 16:16:06,860 [INFO] AcceptBooking - 预约成功：sylvester (u3638153@connect.hku.hk)，2020-06-10，时段A，需要导游: True
+2025-04-19 16:16:06,861 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
+2025-04-22 16:53:02,061 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 16:53:02,063 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 16:53:50,454 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 16:53:50,454 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:03:01,848 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:03:01,848 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:03:04,175 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:03:04,176 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:03:04,349 [INFO] autoreload - Watching for file changes with StatReloader
+2025-04-22 17:04:05,485 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:05,485 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:09,907 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:09,908 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:10,128 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:10,130 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:10,409 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:10,409 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:10,536 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:10,546 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:10,783 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:10,787 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:11,070 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:11,071 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:11,286 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:11,286 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:04:11,474 [INFO] __init__ - VerificationService: 成功加载邮件发送任务
+2025-04-22 17:04:11,474 [INFO] __init__ - VerificationService: 成功加载验证码服务
+2025-04-22 17:09:55,070 [WARNING] AcceptBooking - 表单验证失败
+2025-04-22 17:09:55,071 [WARNING] log - Bad Request: /tourists/book/
+2025-04-22 17:09:55,073 [WARNING] basehttp - "POST /tourists/book/ HTTP/1.1" 400 28
+2025-04-22 17:14:01,031 [INFO] SendEmail - 邮件已成功发送给 luowei (u3638153@connect.hku.hk)
+2025-04-22 17:14:01,034 [INFO] AcceptBooking - 预约成功：luowei (u3638153@connect.hku.hk)，2026-10-16，时段A
+2025-04-22 17:14:01,036 [INFO] basehttp - "POST /tourists/book/ HTTP/1.1" 200 34
