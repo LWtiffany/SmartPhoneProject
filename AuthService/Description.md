@@ -1,6 +1,6 @@
 # 项目目录结构
 
-## Backend/# 项目根目录  
+## Backend/ # 项目根目录  
 ├── Tourists_in_HKU/ # 应用目录  
 │   ├── migrations/ # 存放数据库迁移文件  
 │   ├── templates/ # HTML模板文件  
@@ -27,21 +27,15 @@
 ├── manage.py # Django命令行工具入口  
 └── requirements.txt # 项目依赖列表  
 
-<<<<<<< HEAD
-=======
 ## Description of Database
 Table <auth~> deny illegal login in system
 
 Table <Django~> Django system intial files
 
->>>>>>> luowei-3.0.0
 ## How to Access
 
 本地访问：http://localhost:8000/tourists/book/
 
 局域网访问：http://<你的IP>:8000/tourists/book/
 
-<<<<<<< HEAD
-=======
 
->>>>>>> luowei-3.0.0
