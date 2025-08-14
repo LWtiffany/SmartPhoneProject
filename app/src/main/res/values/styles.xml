@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- 添加底部导航栏文本样式，使用shoukesong字体 -->
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/shoukesong</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

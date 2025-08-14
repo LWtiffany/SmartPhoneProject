@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">HKUtopia</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    
+    <!-- Profile Activity -->
+    <string name="profile_title">我的 / Profile</string>
+    <string name="profile_subtitle">MY PROFILE</string>
+    <string name="account_information">Account Information</string>
+    <string name="toggle_privacy">Toggle Privacy</string>
+    <string name="name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="logout">Log Out</string>
+    <string name="login_register_title">Please Login or Register</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_get_code">Get Verification Code</string>
+    <string name="btn_verify">Login / Register</string>
+    <string name="btn_resend_code">Resend</string>
+    <string name="verification_code_sent">Verification code has been sent to your email</string>
+    <string name="verification_success">Verification successful</string>
+    <string name="wait_before_resend">Please wait %1$d seconds</string>
+    <string name="qr_code_title">My QR Code</string>
+    <string name="qr_code_subtitle">Scan this QR code for your reservations</string>
+    <string name="reservations_title">My Reservations</string>
+    <string name="view_reservations">View My Reservations</string>
+    
+    <!-- Reservation Activity -->
+    <string name="reservation_title">预约参观 / Visit Booking</string>
+    <string name="reservation_subtitle">CAMPUS VISIT RESERVATION</string>
+    <string name="select_date">Select Visit Date</string>
+    <string name="reservation_info">Reservation Information</string>
+    <string name="available_slots">Available Time Slots</string>
+    <string name="morning">Morning</string>
+    <string name="morning_slot">Morning 9:30 - 12:30</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="afternoon_slot">Afternoon 12:30 - 15:30</string>
+    <string name="evening">Evening</string>
+    <string name="evening_slot">Evening 15:30 - 18:30</string>
+    <string name="remaining_slots">%1$d slots remaining</string>
+    <string name="loading_slots">Loading availability...</string>
+    <string name="no_slots_available">No slots available</string>
+    <string name="submit_reservation">Submit Reservation</string>
+    <string name="submitting">Submitting…</string>
+    <string name="weekend_busy_message">Weekend slots may be busier than weekdays</string>
+    <string name="please_login_first">Please login first</string>
+    <string name="please_login_to_reserve">Please login before making a reservation</string>
+    <string name="reservation_success">Reservation successful!\nDate: %1$s\nTime: %2$s</string>
+    <string name="please_select_date_time">Please select a date and time</string>
+    <string name="reservation_successful_title">Reservation Successful</string>
+    <string name="reservation_failed_title">Reservation Failed</string>
+    <string name="error_user_not_found">User information not found. Please try logging in again.</string>
+    
+    <!-- Reservation List Activity -->
+    <string name="back">Back</string>
+    <string name="my_reservations">My Reservations</string>
+    <string name="no_reservations">You don\'t have any reservations yet.</string>
+    
+    <!-- Reservation Item -->
+    <string name="cancel">Cancel</string>
+    <string name="id_check_in">Please bring your ID for check-in</string>
+    
+    <!-- API Error Messages -->
+    <string name="error_network_error">Network error. Please check your connection.</string>
+    <string name="error_already_booked">This email has already booked a tour.</string>
+    <string name="error_invalid_input">Invalid input. Please check your information.</string>
+    <string name="error_invalid_email">Invalid email address.</string>
+    <string name="error_invalid_code">Invalid verification code. Please try again.</string>
+    <string name="error_server_error">Server error. Please try again later.</string>
+    <string name="error_parse_error">Error parsing server response.</string>
+    <string name="error_unknown_error">An unknown error occurred.</string>
+</resources>

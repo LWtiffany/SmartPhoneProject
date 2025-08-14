@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- 背景 -->
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M0,0h200v200h-200z"/>
+
+    <!-- 人物轮廓 -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M100,70m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+
+    <path
+        android:fillColor="#888888"
+        android:pathData="M100,140m-60,0a60,60 0,1 1,120 0a60,60 0,1 1,-120 0"/>
+</vector>

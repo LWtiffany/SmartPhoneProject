@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "港大经典文件夹",
+      "price": 68.0,
+      "images": ["cultural_product1_1", "cultural_product1_2", "cultural_product1_3"]
+    },
+    {
+      "id": 2,
+      "name": "港大笔记本",
+      "price": 45.0,
+      "images": ["cultural_product2_1", "cultural_product2_2", "cultural_product2_3"]
+    },
+    {
+      "id": 3,
+      "name": "港大帆布包",
+      "price": 88.0,
+      "images": ["cultural_product3_1", "cultural_product3_2", "cultural_product3_3"]
+    },
+    {
+      "id": 4,
+      "name": "港大怀旧海报",
+      "price": 78.0,
+      "images": ["cultural_product4_1", "cultural_product4_2", "cultural_product4_3"]
+    },
+    {
+      "id": 5,
+      "name": "港大建筑水彩画",
+      "price": 85.0,
+      "images": ["cultural_product5_1", "cultural_product5_2", "cultural_product5_3"]
+    },
+    {
+      "id": 6,
+      "name": "港大主题书签",
+      "price": 98.0,
+      "images": ["cultural_product6_1", "cultural_product6_2", "cultural_product6_3"]
+    },
+    {
+      "id": 7,
+      "name": "港大纪念徽章",
+      "price": 35.0,
+      "images": ["cultural_product7_1", "cultural_product7_2", "cultural_product7_3"]
+    },
+    {
+      "id": 8,
+      "name": "港大校徽钥匙扣",
+      "price": 28.0,
+      "images": ["cultural_product8_1", "cultural_product8_2", "cultural_product8_3"]
+    },
+    {
+      "id": 9,
+      "name": "港大纪念明信片",
+      "price": 15.0,
+      "images": ["cultural_product9_1", "cultural_product9_2", "cultural_product9_3"]
+    },
+    {
+      "id": 10,
+      "name": "港大文化衫",
+      "price": 25.0,
+      "images": ["cultural_product10_1", "cultural_product10_2", "cultural_product10_3"]
+    },
+    {
+      "id": 11,
+      "name": "港大校训书签",
+      "price": 18.0,
+      "images": ["cultural_product11_1", "cultural_product11_2", "cultural_product11_3"]
+    },
+    {
+      "id": 12,
+      "name": "港大纪念马克杯",
+      "price": 58.0,
+      "images": ["cultural_product12_1", "cultural_product12_2", "cultural_product12_3"]
+    }
+  ]
+}

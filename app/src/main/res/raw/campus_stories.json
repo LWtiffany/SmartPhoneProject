@@ -1,0 +1,112 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "可持续建筑新突破：港大研究团队开发新型城市绿化降温模型",
+      "content": "香港大学可持续高密度城市实验室的研究人员开发了一种新的城市绿化降温模型，利用机器学习优化树木种植位置，以减少城市热应激。该研究成果已发表在《Landscape and Urban Planning》期刊上。",
+      "author": "HKU Sustainable Cities Lab",
+      "date": "2023-12-01",
+      "imageUrls": ["news_image1", "news_image2", "news_image3"],
+      "tags": ["可持续发展", "城市规划", "绿化"],
+      "likes": 142,
+      "comments": 28,
+      "isLatest": false
+    },
+    {
+      "id": 2,
+      "title": "屋顶农场：港大学生在校园种植香草与蔬菜",
+      "content": "香港大学学生在校园屋顶农场种植香草和蔬菜，旨在促进可持续生活方式并增强社区联系。该项目由学生事务处CEDARS运营，为学生提供了与自然互动的机会。",
+      "author": "HKU CEDARS",
+      "date": "2024-03-15",
+      "imageUrls": ["news_image4", "news_image5", "news_image6"],
+      "tags": ["校园生活", "可持续发展", "社区"],
+      "likes": 158,
+      "comments": 35,
+      "isLatest": false
+    },
+    {
+      "id": 3,
+      "title": "历史建筑：港大本部大楼被列为法定古迹",
+      "content": "香港大学本部大楼建于1912年，是校园内最古老的建筑之一。其新古典主义风格和红砖外墙使其成为香港的地标性建筑。该建筑已被列为香港法定古迹。",
+      "author": "HKU Heritage Fund",
+      "date": "2024-05-10",
+      "imageUrls": ["news_image7", "news_image8", "news_image9"],
+      "tags": ["历史", "建筑", "文化遗产"],
+      "likes": 120,
+      "comments": 22,
+      "isLatest": false
+    },
+    {
+      "id": 4,
+      "title": "文化讲座：港大举办“古代青铜器的工业生产”讲座",
+      "content": "香港大学人文社会科学研究所举办了一场关于古代青铜器工业生产的讲座，探讨了公元前500至200年间中国青铜镜和钟的生产方式，并介绍了现代数字技术在考古研究中的应用。",
+      "author": "HKU Institute for the Humanities and Social Sciences",
+      "date": "2024-11-15",
+      "imageUrls": ["news_image10", "news_image11", "news_image12"],
+      "tags": ["讲座", "考古", "文化遗产"],
+      "likes": 98,
+      "comments": 18,
+      "isLatest": false
+    },
+    {
+      "id": 5,
+      "title": "AI创新：港大团队在百度AI挑战赛中夺得一等奖",
+      "content": "香港大学城市分析团队在百度2023年全国大模型应用创新挑战赛中荣获创新类一等奖。他们开发的AI模型在城市规划和设计中表现出色，展示了港大在人工智能领域的领先地位。",
+      "author": "HKU Urban Analytics Lab",
+      "date": "2023-11-20",
+      "imageUrls": ["news_image13", "news_image14", "news_image15"],
+      "tags": ["人工智能", "创新", "学生成就"],
+      "likes": 176,
+      "comments": 40,
+      "isLatest": false
+    },
+    {
+      "id": 6,
+      "title": "国际文化节：港大举办多元文化交流活动",
+      "content": "香港大学举办了一年一度的国际文化节，来自全球各地的学生展示了他们的传统文化、美食和艺术表演，促进了校园内的文化交流与理解。",
+      "author": "HKU Global Engagement Office",
+      "date": "2023-10-18",
+      "imageUrls": ["news_image16", "news_image17", "news_image18"],
+      "tags": ["文化交流", "校园生活", "国际化"],
+      "likes": 134,
+      "comments": 29,
+      "isLatest": false
+    },
+    {
+      "id": 7,
+      "title": "医学突破：港大教授荣获国际癌症研究奖项",
+      "content": "香港大学医学院的江志良教授因其在癌症研究领域的杰出贡献，荣获国际医学科学奖，表彰其在肿瘤免疫治疗方面的开创性工作。",
+      "author": "HKU Medical Faculty",
+      "date": "2024-07-05",
+      "imageUrls": ["news_image19", "news_image20", "news_image21"],
+      "tags": ["医学研究", "奖项", "学术成就"],
+      "likes": 190,
+      "comments": 36,
+      "isLatest": false
+    },
+    {
+      "id": 8,
+      "title": "建筑讲座：港大建筑系举办“美好生活”系列讲座",
+      "content": "香港大学建筑系举办了“美好生活”系列讲座，邀请多位国际知名建筑师分享他们对建筑与生活质量关系的见解，促进了学术界与实践界的交流。",
+      "author": "HKU Department of Architecture",
+      "date": "2025-04-22",
+      "imageUrls": ["news_image22", "news_image23", "news_image24"],
+      "tags": ["建筑", "讲座", "学术交流"],
+      "likes": 112,
+      "comments": 24,
+      "isLatest": true
+    },
+    {
+      "id": 9,
+      "title": "社会创新：港大举办“HKU Cares”社会创新挑战赛",
+      "content": "香港大学与社会企业高峰会联合举办了“HKU Cares”社会创新挑战赛，吸引了近50名参与者，旨在鼓励学生提出解决社会问题的创新方案。",
+      "author": "HKU Communications and Public Affairs Office",
+      "date": "2025-04-12",
+      "imageUrls": ["news_image25", "news_image26", "news_image27"],
+      "tags": ["社会创新", "学生活动", "社区参与"],
+      "likes": 126,
+      "comments": 30,
+      "isLatest": true
+    }
+  ]
+}

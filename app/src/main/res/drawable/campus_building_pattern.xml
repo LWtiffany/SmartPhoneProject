@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Simplified building silhouette pattern -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M20,80L20,40L30,40L30,80L20,80Z" />
+
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M40,80L40,30L50,20L60,30L60,80L40,80Z" />
+
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M70,80L70,50L80,50L80,80L70,80Z" />
+
+    <!-- Windows -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M23,45L27,45L27,50L23,50Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M23,55L27,55L27,60L23,60Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,40L55,40L55,45L45,45Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,55L55,55L55,60L45,60Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73,55L77,55L77,60L73,60Z" />
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tag_pill_bg"
+    android:fontFamily="@font/shoukesong"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp"
+    android:text="#标签"
+    android:textColor="@color/text_primary"
+    android:textSize="14sp" />
